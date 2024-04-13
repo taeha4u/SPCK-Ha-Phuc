@@ -33,26 +33,24 @@ body {
   font-size: 40px;
   --start-background-color: #00eaff;
   --end-background-color: #ff00f0;
-  background: linear-gradient(
-    to right,
-    var(--start-background-color),
-    var(--end-background-color)
-  );
+  background: linear-gradient(to right,
+      var(--start-background-color),
+      var(--end-background-color));
   background-size: 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.container-fluid {
-  /* margin: 0px 90px; */
-  /* padding: 0px 80px; */
+.games {
+  margin: 0 56px;
 }
 
 .card {
   padding: 0 !important;
   background: none;
   border-radius: 0;
-  /* margin-left: 20px; */
+  height: 100%;
+  border: 0;
 }
 
 .card img {
@@ -69,15 +67,50 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
+}
+
+.price p {
+  margin: 0 !important;
 }
 
 .price .price-org {
   color: #00ffff;
   font-weight: 700;
   font-size: 25px;
+  margin-top: -8px !important;
 }
 
 .price .price-discount {
   color: #636363;
-  font-size: 25px;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.action {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-addTocart {
+  background-color: black;
+  border: 1px solid;
+  border-image-slice: 1;
+  color: white;
+  font-size: 13px;
+  padding: 3px 30px 3px 30px;
+  margin: 0 5px 0 0;
+}
+
+.btn-star {
+  background-color: black;
+  border: 1px solid;
+  border-image-slice: 1;
+  color: #696969;
+  padding: 9px 12px 3px 12px;
+  font-size: 20px;
+}
+
+.border-gradient {
+  border-image-source: linear-gradient(to left, #00eaff, #ff00f0);
 }
