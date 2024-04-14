@@ -24,6 +24,7 @@ body {
 }
 
 .headline-text:after {
+  content: "";
   background-image: url(../img/leftheadline.png);
   background-position-x: left;
   left: 100%;
@@ -71,17 +72,17 @@ body {
 }
 
 .price p {
-  margin: 0 !important;
+  margin: 0;
 }
 
-.price .price-org {
+.price-discount {
   color: #00ffff;
   font-weight: 700;
-  font-size: 25px;
-  margin-top: -8px !important;
+  font-size: 30px;
+  margin-top: -12px !important;
 }
 
-.price .price-discount {
+.price-org {
   color: #636363;
   font-size: 18px;
   text-decoration: line-through;
@@ -89,28 +90,46 @@ body {
 
 .action {
   display: flex;
-  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
 }
 
 .btn-addTocart {
-  background-color: black;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  background-color: #111111;
   border: 1px solid;
   border-image-slice: 1;
   color: white;
   font-size: 13px;
-  padding: 3px 30px 3px 30px;
-  margin: 0 5px 0 0;
+}
+
+.btn-addTocart:hover {
+  background-image: linear-gradient(to right, #00eaff, #ff00f0);
 }
 
 .btn-star {
-  background-color: black;
+  width: 50px;
+  height: 35px;
+  padding: 0 0 1px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
   border: 1px solid;
   border-image-slice: 1;
   color: #696969;
-  padding: 9px 12px 3px 12px;
-  font-size: 20px;
+  font-size: 22px;
+}
+
+.btn-star:hover {
+  color: #00eaff;
 }
 
 .border-gradient {
-  border-image-source: linear-gradient(to left, #00eaff, #ff00f0);
+  border-image-source: linear-gradient(to right, #00eaff, #ff00f0);
 }
