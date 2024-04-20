@@ -10,6 +10,7 @@ body {
   background-size: cover;
 }
 
+/* main-content-1 */
 .headline-text:before {
   content: "";
   background-image: url(../img/leftheadline.png);
@@ -31,7 +32,7 @@ body {
 }
 
 .headline-text {
-  font-size: 40px;
+  font-size: 55px;
   --start-background-color: #00eaff;
   --end-background-color: #ff00f0;
   background: linear-gradient(to right,
@@ -132,4 +133,45 @@ body {
 
 .border-gradient {
   border-image-source: linear-gradient(to right, #00eaff, #ff00f0);
+}
+
+.btn-home {
+  font-size: 18px;
+  height: 50px;
+  width: 230px;
+  background-color: black;
+  color: white;
+  margin: 70px 0px;
+  --start-background-color: #00eaff;
+  --end-background-color: #ff00f0;
+  border-top: none;
+  border-image-slice: 1;
+  border-width: .1rem;
+  border-image-source: linear-gradient(to right, var(--start-background-color), var(--end-background-color));
+}
+
+.btn-home:hover {
+  color: #00eaff;
+}
+
+.underline::before {
+  background-image: url(/assets/img/line.webp);
+}
+
+/* main-content-1 */
+.price-2 p {
+  margin: 0;
+}
+
+.price-discount-2 {
+  color: #00ffff;
+  font-weight: 700;
+  font-size: 90px;
+  margin-top: -30px !important;
+}
+
+.price-org-2 {
+  color: #636363;
+  font-size: 30px;
+  text-decoration: line-through;
 }
