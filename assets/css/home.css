@@ -44,15 +44,16 @@ body {
 }
 
 .games {
-  margin: 0 56px;
+  margin-right: 56px !important;
+  margin-left: 56px !important;
 }
 
 .card {
-  padding: 0 !important;
+  /* padding: 0 !important; */
   background: none;
-  border-radius: 0;
+  border-radius: 0 !important;
   height: 100%;
-  border: 0;
+  border: 0 !important;
   background-color: transparent !important;
 }
 
