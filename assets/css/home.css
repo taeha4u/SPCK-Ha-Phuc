@@ -53,6 +53,7 @@ body {
   border-radius: 0;
   height: 100%;
   border: 0;
+  background-color: transparent !important;
 }
 
 .card img {
