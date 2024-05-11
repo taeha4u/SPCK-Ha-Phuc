@@ -1,12 +1,9 @@
 import {
-    getFirestore,
-    collection,
-    onSnapshot,
-    query,
-  } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
+  getFirestore
+} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
   
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
-  import { getAuth } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
   
   const firebaseConfig = {
     apiKey: "AIzaSyCkNGpTMBMTbqdCF3_wWdDDMswyk_7QRs0",
