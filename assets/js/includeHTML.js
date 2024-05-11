@@ -1,3 +1,4 @@
+// Use to Combine HTML files together. Ex: home.html
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
