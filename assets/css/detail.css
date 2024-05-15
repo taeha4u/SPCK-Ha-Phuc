@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../img/background.webp");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.col-lg-9 {
+  padding: 0 0 0 4px !important;
+}
+
+iframe {
+  width: 100%;
+  min-height: 870px;
+}
+
+.detail-info {
+  height: 870px;
+  background-color: rgba(26, 26, 26, 0.65);
+  padding: 20px 30px !important;
+  color: #cccccc;
+}
+
+.product-name {
+  font-size: 38px;
+}
+
+.product-rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.star {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+
+.product-rate i {
+  color: #ff9529;
+}
+
+.rate-link a {
+  font-size: 17px;
+  color: #cccccc;
+  text-decoration: underline;
+}
+
+.rate-link a:hover {
+  color: #cccccc;
+}
+
+.product-image img {
+  width: 100%;
+}
+
+.product-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-discount {
+  color: #00ffff;
+  font-weight: bold;
+  font-size: 44px;
+  margin-top: -20px !important;
+}
+
+.cart-btn button {
+  border: none;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  background-color: #111111;
+  font-size: 20px;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 0.1rem;
+  border-image-source: linear-gradient(to right, #00eaff, #ff00f0);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.cart-btn button:hover {
+  background-image: linear-gradient(135deg, #00eaff, #ff00f0 77%);
+}
+
+.info-item {
+  font-size: 25px;
+}
+
+.info-item .heading {
+  font-weight: bold;
+  color: #787878;
+}
+
+.info-item .content {
+  color: #00ffff;
+}
+
+.game-detail {
+  background-color: rgba(26, 26, 26, 0.65);
+}
+
+.nav-link {
+  font-size: 30px;
+  border: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+  color: #787878;
+}
+
+.nav-link.active {
+  color: #00ffff !important;
+}
+
+.tab-content {
+  color: #cccccc;
+  font-size: 17px;
+}
+
+.system-heading {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.system-content > div {
+  display: flex;
+  margin-top: 16px;
+}
+
+.system-name {
+  font-weight: bold;
+}
+
+.system-value {
+  margin-left: 16px;
+}
+
+.step {
+  font-size: 50px;
+}
+
+.content {
+  font-weight: bold;
+}
+
+.game-detail {
+  padding: 40px 30px 30px 30px !important;
+  color: #787878;
+  font-size: 25px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.game-detail .content {
+  font-weight: normal;
+}
+
+.game-detail__item {
+  margin-top: 20px;
+}
