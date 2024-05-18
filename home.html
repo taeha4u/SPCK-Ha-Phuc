@@ -1,287 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assets/css/home.css" />
-</head>
+  <body>
+    <!-- Start Include HTML.js -->
+    <div include-html="./navbar.html"></div>
+    <!-- End Include HTML.js -->
+    <div class="section-1">
+      <div class="main-content-1">
+        <div class="headline text-center my-4">
+          <span class="headline-text gradient-color">Most Wanted</span>
+        </div>
 
-<body>
-  <!-- Start Include HTML.js -->
-  <div include-html="./navbar.html"></div> 
-  <!-- End Include HTML.js -->
-  <div class="section-1">
-    <div class="main-content-1">
-      <div class="headline text-center my-4">
-        <span class="headline-text gradient-color">Most Wanted</span>
-      </div>
+        <div class="container-fluid">
+          <div class="games row gx-5" id="game-list"></div>
+        </div>
 
-      <div class="container-fluid">
-        <div class="games row gx-5">
-          <div style="padding: 0 10px" class=" col-lg-3 col-md-4 col-sm-12">
-            <div class="card">
-              <img src="./assets/img/ba8ba8de176fe36073aeff8fdeb1efc7.jpg" class="card-img-top" alt="" />
-              <h1>SOUTH PARK: SNOW DAY!</h1>
-              <div class="content-2">
-                <div class="price">
-                  <p class="price-org"><span style="text-decoration: line-through;">30.</span><sup
-                      style="font-size: 11px; text-decoration: line-through;">51$</sup></p>
-                  <p class="price-discount">20.<sup style="font-size: 18px;">53$</sup></p>
-                </div>
-                <div class="action">
-                  <button class="btn-addTocart border-gradient" type="button">ADD TO CART</button>
-                  <button class="btn-star border-gradient" type="button">
-                    <i class="fa-regular fa-star"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="padding: 0 10px" class=" col-lg-3 col-md-4 col-sm-12">
-            <div class="card">
-              <img src="./assets/img/ba8ba8de176fe36073aeff8fdeb1efc7.jpg" class="card-img-top" alt="" />
-              <h1>SOUTH PARK: SNOW DAY!</h1>
-              <div class="content-2">
-                <div class="price">
-                  <p class="price-org">30.<sup style="font-size: 11px;">51$</sup></p>
-                  <p class="price-discount">20.<sup style="font-size: 18px;">53$</sup></p>
-                </div>
-                <div class="action">
-                  <button class="btn-addTocart border-gradient" type="button">ADD TO CART</button>
-                  <button class="btn-star border-gradient" type="button">
-                    <i class="fa-regular fa-star"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="padding: 0 10px" class=" col-lg-3 col-md-4 col-sm-12">
-            <div class="card">
-              <img src="./assets/img/ba8ba8de176fe36073aeff8fdeb1efc7.jpg" class="card-img-top" alt="" />
-              <h1>SOUTH PARK: SNOW DAY!</h1>
-              <div class="content-2">
-                <div class="price">
-                  <p class="price-org">30.<sup style="font-size: 11px;">51$</sup></p>
-                  <p class="price-discount">20.<sup style="font-size: 18px;">53$</sup></p>
-                </div>
-                <div class="action">
-                  <button class="btn-addTocart border-gradient" type="button">ADD TO CART</button>
-                  <button class="btn-star border-gradient" type="button">
-                    <i class="fa-regular fa-star"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="padding: 0 10px" class=" col-lg-3 col-md-4 col-sm-12">
-            <div class="card">
-              <img src="./assets/img/ba8ba8de176fe36073aeff8fdeb1efc7.jpg" class="card-img-top" alt="" />
-              <h1>SOUTH PARK: SNOW DAY!</h1>
-              <div class="content-2">
-                <div class="price">
-                  <p class="price-org">30.<sup style="font-size: 11px;">51$</sup></p>
-                  <p class="price-discount">20.<sup style="font-size: 18px;">53$</sup></p>
-                </div>
-                <div class="action">
-                  <button class="btn-addTocart border-gradient" type="button">ADD TO CART</button>
-                  <button class="btn-star border-gradient" type="button">
-                    <i class="fa-regular fa-star"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="underline gradient-separator"></div>
+        <div class="text-center">
+          <button class="btn-home" type="button">SHOW MORE</button>
         </div>
       </div>
 
-      <div class="underline gradient-separator"></div>
-      <div class="text-center">
-        <button class="btn-home" type="button">SHOW MORE</button>
-      </div>
+      <div class="main-content-2">
+        <div class="headline text-center my-4">
+          <span class="headline-text gradient-color">Just Arrived</span>
+        </div>
 
-    </div>
+        <div class="container-fluid">
+          <div class="games row gx-5" id="arrived-1"></div>
 
-    <div class="main-content-2">
-      <div class="headline text-center my-4">
-        <span class="headline-text gradient-color">Just Arrived</span>
-      </div>
+          <div class="games row gx-5" id="arrived-2"></div>
 
-      <div class="container-fluid">
-        <div class="games row gx-5">
-          <div style="padding: 40px 10px" class=" col-lg-6 col-md-6 col-sm-12">
-            <div class="card">
-              <img src="./assets/img/ba8ba8de176fe36073aeff8fdeb1efc7.jpg" class="card-img-top" alt="" />
-              <h1>SOUTH PARK: SNOW DAY!</h1>
-              <div class="content-2">
-                <div class="price-2">
-                  <p class="price-org-2"><span style="text-decoration: line-through;">30.</span><sup
-                      style="font-size: 17px; text-decoration: line-through;">51$</sup></p>
-                  <p class="price-discount-2">20.<sup style="font-size: 51px;">53$</sup></p>
-                </div>
-                <div class="action">
-                  <button class="btn-addTocart border-gradient" type="button">ADD TO CART</button>
-                  <button class="btn-star border-gradient" type="button">
-                    <i class="fa-regular fa-star"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="games row gx-5" id="arrived-3"></div>
 
-          <div style="padding: 40px 10px" class=" col-lg-6 col-md-6 col-sm-12">
-            <div class="card">
-              <img src="./assets/img/ba8ba8de176fe36073aeff8fdeb1efc7.jpg" class="card-img-top" alt="" />
-              <h1>SOUTH PARK: SNOW DAY!</h1>
-              <div class="content-2">
-                <div class="price-2">
-                  <p class="price-org-2"><span style="text-decoration: line-through;">30.</span><sup
-                      style="font-size: 17px; text-decoration: line-through;">51$</sup></p>
-                  <p class="price-discount-2">20.<sup style="font-size: 51px;">53$</sup></p>
-                </div>
-                <div class="action">
-                  <button class="btn-addTocart border-gradient" type="button">ADD TO CART</button>
-                  <button class="btn-star border-gradient" type="button">
-                    <i class="fa-regular fa-star"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="games row gx-5" id="arrived-4"></div>
 
-          <div style="padding: 40px 10px" class=" col-lg-6 col-md-6 col-sm-12">
-            <div class="card">
-              <img src="./assets/img/ba8ba8de176fe36073aeff8fdeb1efc7.jpg" class="card-img-top" alt="" />
-            </div>
-          </div>
-
-          <div style="padding: 40px 10px" class=" col-lg-6 col-md-6 col-sm-12">
-            <div class="card">
-              <div style="margin-top: auto">
-                <h1>SOUTH PARK: SNOW DAY!</h1>
-                <div class="content-2">
-                  <div class="price-2">
-                    <p class="price-org-2"><span style="text-decoration: line-through;">30.</span><sup
-                        style="font-size: 17px; text-decoration: line-through;">51$</sup></p>
-                    <p class="price-discount-2">20.<sup style="font-size: 51px;">53$</sup></p>
-                  </div>
-                  <div class="action">
-                    <button class="btn-addTocart border-gradient" type="button">ADD TO CART</button>
-                    <button class="btn-star border-gradient" type="button">
-                      <i class="fa-regular fa-star"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="padding: 40px 10px" class=" col-lg-6 col-md-6 col-sm-12">
-            <div class="card">
-              <div style="margin-top: auto">
-                <h1>SOUTH PARK: SNOW DAY!</h1>
-                <div class="content-2">
-                  <div class="price-2">
-                    <p class="price-org-2"><span style="text-decoration: line-through;">30.</span><sup
-                        style="font-size: 17px; text-decoration: line-through;">51$</sup></p>
-                    <p class="price-discount-2">20.<sup style="font-size: 51px;">53$</sup></p>
-                  </div>
-                  <div class="action">
-                    <button class="btn-addTocart border-gradient" type="button">ADD TO CART</button>
-                    <button class="btn-star border-gradient" type="button">
-                      <i class="fa-regular fa-star"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="padding: 40px 10px" class=" col-lg-6 col-md-6 col-sm-12">
-            <div class="card">
-              <img src="./assets/img/ba8ba8de176fe36073aeff8fdeb1efc7.jpg" class="card-img-top" alt="" />
-            </div>
-          </div>
-
-          <div style="padding: 40px 10px" class=" col-lg-6 col-md-6 col-sm-12">
-            <div class="card">
-              <img src="./assets/img/ba8ba8de176fe36073aeff8fdeb1efc7.jpg" class="card-img-top" alt="" />
-            </div>
-          </div>
-
-          <div style="padding: 40px 10px" class=" col-lg-6 col-md-6 col-sm-12">
-            <div class="card">
-              <div style="margin-top: auto">
-                <h1>SOUTH PARK: SNOW DAY!</h1>
-                <div class="content-2">
-                  <div class="price-2">
-                    <p class="price-org-2"><span style="text-decoration: line-through;">30.</span><sup
-                        style="font-size: 17px; text-decoration: line-through;">51$</sup></p>
-                    <p class="price-discount-2">20.<sup style="font-size: 51px;">53$</sup></p>
-                  </div>
-                  <div class="action">
-                    <button class="btn-addTocart border-gradient" type="button">ADD TO CART</button>
-                    <button class="btn-star border-gradient" type="button">
-                      <i class="fa-regular fa-star"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="padding: 40px 10px" class=" col-lg-6 col-md-6 col-sm-12">
-            <div class="card">
-              <div style="margin-top: auto">
-                <h1>SOUTH PARK: SNOW DAY!</h1>
-                <div class="content-2">
-                  <div class="price-2">
-                    <p class="price-org-2"><span style="text-decoration: line-through;">30.</span><sup
-                        style="font-size: 17px; text-decoration: line-through;">51$</sup></p>
-                    <p class="price-discount-2">20.<sup style="font-size: 51px;">53$</sup></p>
-                  </div>
-                  <div class="action">
-                    <button class="btn-addTocart border-gradient" type="button">ADD TO CART</button>
-                    <button class="btn-star border-gradient" type="button">
-                      <i class="fa-regular fa-star"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="padding: 40px 10px" class=" col-lg-6 col-md-6 col-sm-12">
-            <div class="card">
-              <img src="./assets/img/ba8ba8de176fe36073aeff8fdeb1efc7.jpg" class="card-img-top" alt="" />
-            </div>
-          </div>
-
+          <div class="games row gx-5" id="arrived-5"></div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="./assets/js/product.js" type="module"></script>
-  <script src="./assets/js/includeHTML.js"></script>
-</body>
+    <div include-html="./footer.html"></div>
 
+    <script src="./assets/js/navbar.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/product.js" type="module"></script>
+    <script src="./assets/js/includeHTML.js"></script>
+  </body>
 </html>

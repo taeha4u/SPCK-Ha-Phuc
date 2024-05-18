@@ -14,6 +14,7 @@ submitBtn.onclick = async (e) => {
         );
         // console.log(firebase.auth().currentUser);
         alert("Login successful")
+        localStorage.setItem("currentUser", auth.currentUser.email)
         window.location.href="home.html"
     }catch(err){alert(err.message)}
 }

@@ -8,6 +8,27 @@
   overflow: hidden;
 }
 
+#cartBtn i {
+  margin-top: 4px;
+  margin-right: 24px;
+  font-size: 24px;
+}
+
+#cartBtn a {
+  color: #787878;
+}
+
+.login a {
+  color: #787878;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.login a:hover {
+  text-decoration: none;
+  color: #787878;
+}
+
 .navbar-left {
   display: flex;
   justify-content: space-around;
@@ -84,4 +105,19 @@ ul li a {
 .navbar-right {
   display: flex;
   justify-content: space-around;
+}
+
+#logout {
+  font-size: 20px;
+  margin-left: -8px;
+  margin-bottom: -4px;
+}
+
+#cartNumber {
+  position: relative;
+  left: -24px;
+  color: #000000;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 0 4px;
 }

@@ -18,6 +18,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/css/detail.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
   </head>
   <body>
     <!-- Start Include HTML.js -->
@@ -26,18 +28,9 @@
     <!-- Content -->
     <div class="container-fluid mt-4">
       <div class="row">
-        <div class="col-lg-9">
-          <iframe
-            src="https://www.youtube.com/embed/DiwmiqzW6gs?si=lqYxN3qJ1dFuIzlA"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="col-lg-3 detail-info">
-          <div class="product-name">No Rest for the Wicked</div>
+        <div class="col-lg-9" id="game-video"></div>
+        <div class="col-lg-3 detail-info" style="overflow: hidden">
+          <div class="product-name" id="product-name"></div>
           <div class="product-rate mt-2">
             <div class="star">
               <div>
@@ -54,24 +47,17 @@
               <a href="#">Rate & Review</a>
             </div>
           </div>
-          <div class="product-image mt-4">
-            <img
-              src="https://www.yuplay.com/media/products/no-rest-for-the-wicked/616/017e8724786d11cb40352648c464e6adf4c26714.jpg"
-              alt="product-image"
-            />
-          </div>
+          <div class="product-image mt-4" id="product-image"></div>
           <div class="product-cart mt-4">
             <div class="product-price">
               <p class="price-org" style="color: #636363">
                 <span style="font-size: 25px; text-decoration: line-through"
-                  >30.</span
+                  >100.</span
                 ><sup style="font-size: 12.5px; text-decoration: line-through"
                   >51$</sup
                 >
               </p>
-              <p class="price-discount">
-                20.<sup style="font-size: 18px">53$</sup>
-              </p>
+              <p class="price-discount" id="price-discount"></p>
             </div>
 
             <div class="cart-btn">
@@ -80,11 +66,11 @@
           </div>
           <div class="info-item mt-2">
             <div class="heading">Available Platform:</div>
-            <div class="content" id="platform">Steam</div>
+            <div class="content" id="platform"></div>
           </div>
           <div class="info-item mt-3">
             <div class="heading">Can be activated in:</div>
-            <div class="content" id="platform">Vietnam</div>
+            <div class="content" id="location"></div>
           </div>
           <div class="info-item mt-3">
             <div class="heading">Delivery:</div>
@@ -101,10 +87,10 @@
                 class="nav-link active"
                 id="pills-home-tab"
                 data-toggle="pill"
-                data-target="#pills-home"
+                data-target="#game-desc"
                 type="button"
                 role="tab"
-                aria-controls="pills-home"
+                aria-controls="game-desc"
                 aria-selected="true"
               >
                 Game Description
@@ -115,10 +101,10 @@
                 class="nav-link"
                 id="pills-profile-tab"
                 data-toggle="pill"
-                data-target="#pills-profile"
+                data-target="#system"
                 type="button"
                 role="tab"
-                aria-controls="pills-profile"
+                aria-controls="system"
                 aria-selected="false"
               >
                 System Requirements
@@ -146,33 +132,13 @@
           >
             <div
               class="tab-pane fade show active"
-              id="pills-home"
+              id="game-desc"
               role="tabpanel"
               aria-labelledby="pills-home-tab"
-            >
-              From Moon Studios, the award-winning developers of Ori and the
-              Blind Forest and Ori and the Will of the Wisps comes No Rest for
-              the Wicked, a visceral, precision Action RPG set to reinvent the
-              genre. The year is 841 – King Harol is dead. As word of his death
-              echoes throughout the kingdom, the crown passes to his arrogant,
-              yet untested son Magnus. Even worse, the Pestilence, an unholy
-              plague not seen for a thousand years, has returned. It sweeps
-              across the land, corrupting everything and everyone it touches.
-              Madrigal Seline, a ruthlessly ambitious figure in the church, sees
-              the Pestilence as a chance to prove herself in the eyes of her
-              god. These forces converge on the backwater Isola Sacra, where
-              rebel groups and the provincial government fight for control amid
-              the isle’s crumbling ruins. You are a Cerim – a member of a group
-              of mystical holy warriors imbued with remarkable powers and sworn
-              to defeat the Pestilence at any cost. But the task will prove
-              increasingly challenging as you become entangled in the people’s
-              plight and the vast political struggle of this downtrodden land.
-              Chaos will pull you in every direction as you seek to cleanse the
-              land of wickedness and shape the kingdom’s fate.
-            </div>
+            ></div>
             <div
               class="tab-pane fade"
-              id="pills-profile"
+              id="system"
               role="tabpanel"
               aria-labelledby="pills-profile-tab"
             >
@@ -181,13 +147,11 @@
                 <div class="system-content">
                   <div>
                     <div class="system-name">OS:</div>
-                    <div class="system-value">Windows 10</div>
+                    <div class="system-value" id="minimum-os"></div>
                   </div>
                   <div>
                     <div class="system-name">Processor:</div>
-                    <div class="system-value">
-                      Intel Core i5-8400 / AMD Ryzen 5 2600
-                    </div>
+                    <div class="system-value" id="minimum-processor"></div>
                   </div>
                   <div>
                     <div class="system-name">Memory:</div>
@@ -195,9 +159,7 @@
                   </div>
                   <div>
                     <div class="system-name">Graphics:</div>
-                    <div class="system-value">
-                      Nvidia GeForce GTX 970 / AMD Radeon RX Vega 56
-                    </div>
+                    <div class="system-value" id="minimum-graphic"></div>
                   </div>
                   <div>
                     <div class="system-name">Storage:</div>
@@ -215,13 +177,11 @@
                 <div class="system-content">
                   <div>
                     <div class="system-name">OS:</div>
-                    <div class="system-value">Windows 10</div>
+                    <div class="system-value" id="rec-os"></div>
                   </div>
                   <div>
                     <div class="system-name">Processor:</div>
-                    <div class="system-value">
-                      Intel Core i5-8400 / AMD Ryzen 5 2600
-                    </div>
+                    <div class="system-value" id="rec-processor"></div>
                   </div>
                   <div>
                     <div class="system-name">Memory:</div>
@@ -229,9 +189,7 @@
                   </div>
                   <div>
                     <div class="system-name">Graphics:</div>
-                    <div class="system-value">
-                      Nvidia GeForce GTX 970 / AMD Radeon RX Vega 56
-                    </div>
+                    <div class="system-value" id="rec-graphic"></div>
                   </div>
                   <div>
                     <div class="system-name">Storage:</div>
@@ -307,7 +265,7 @@
 
           <div class="game-detail__item">
             <div class="title">Release Date:</div>
-            <div class="content">April 18, 2024</div>
+            <div class="content" id="release-date"></div>
           </div>
 
           <div class="game-detail__item">
@@ -325,7 +283,7 @@
 
           <div class="game-detail__item">
             <div class="title">Genres:</div>
-            <div class="content">Action, Adventure, RPG</div>
+            <div class="content" id="genres"></div>
           </div>
 
           <div class="game-detail__item">
@@ -335,7 +293,7 @@
 
           <div class="game-detail__item">
             <div class="title">Developer:</div>
-            <div class="content">Moon Studios GmbH</div>
+            <div class="content" id="public"></div>
           </div>
         </div>
       </div>
@@ -359,6 +317,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/detail.js" type="module"></script>
     <script src="./assets/js/includeHTML.js"></script>
   </body>
 </html>

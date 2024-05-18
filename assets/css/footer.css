@@ -10,7 +10,7 @@ body {
   letter-spacing: 1px;
 }
 
-.border-gradient {
+.border-gradient-footer {
   border-image-slice: 1;
   border-bottom-width: 2px;
   box-sizing: border-box !important;
@@ -49,9 +49,9 @@ footer {
 }
 
 .footer-up-content {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* gap: 32px; */
   margin: 80px;
   font-size: 20px;
 }
@@ -76,7 +76,7 @@ input {
 }
 
 .socials-icon {
-  margin-top: 20px;
+  margin-top: 36px;
   display: flex;
   justify-content: center;
   gap: 48px;
